@@ -145,6 +145,12 @@ FA2LayoutSupervisor.prototype.askForIterations = function (withEdges) {
   return this;
 };
 
+/**
+ * Update layout settings.
+ *
+ * @param {Partial<ForceAtlas2LayoutParameters<NodeAttributes, EdgeAttributes>>} settings - Partial layout settings to update.
+ * @return {FA2LayoutSupervisor} The current instance.
+ */
 FA2LayoutSupervisor.prototype.updateSettings = function (settings) {
   this.settings = helpers.assign({}, this.settings, settings);
 
@@ -154,7 +160,7 @@ FA2LayoutSupervisor.prototype.updateSettings = function (settings) {
     throw new Error(
       'graphology-layout-forceatlas2/worker: ' + validationError.message
     );
-    
+
   return this;
 }
 
