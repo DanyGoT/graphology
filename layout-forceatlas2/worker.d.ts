@@ -13,6 +13,7 @@ export default class FA2LayoutSupervisor<
   );
 
   isRunning(): boolean;
+  updateSettings(settings: Partial<ForceAtlas2LayoutParameters<NodeAttributes, EdgeAttributes>>): void;
   start(): void;
   stop(): void;
   kill(): void;
