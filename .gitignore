@@ -1,6 +1,0 @@
-# Common
-.DS_Store
-.vscode
-node_modules
-*.log
-Notes.md
